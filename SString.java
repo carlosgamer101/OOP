@@ -29,7 +29,15 @@ public class SString {
         brand.delete(12,brand.length());
         System.out.println(brand);
 
-        
+        StringBuffer sb = new StringBuffer("Hello");
+        System.out.println(sb);
+
+        sb.append(" World");
+        System.out.println(sb);
+
+        sb.reverse();
+        System.out.println(sb);
+        // SAME AS THE ONES ABOVE
 
     }
     
