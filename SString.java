@@ -21,6 +21,15 @@ public class SString {
         System.out.println(brand.toString());
 
         brand.insert(5,",");
+        System.out.println(brand.toString());
+
+        brand.replace(7, 12, "there");
+        System.out.println(brand.toString());
+
+        brand.delete(12,brand.length());
+        System.out.println(brand);
+
+        
 
     }
     
