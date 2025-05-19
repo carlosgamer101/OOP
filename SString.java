@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class SString {
     public static void main(String[] args) {
         String name ="Strathmore University";
@@ -38,6 +39,12 @@ public class SString {
         sb.reverse();
         System.out.println(sb);
         // SAME AS THE ONES ABOVE
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a string");
+        String s = input.nextLine();
+
+       
 
     }
     
