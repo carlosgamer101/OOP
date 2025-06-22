@@ -3,18 +3,18 @@ import java.util.Scanner;
 public class assignment {
     public static void main(String[] args) {
         // int sum = 0;
-        // for(int i=1 ; i<=10 ; i+=1){
+        // for(int i=1 ; i<=10 ; i++){
         //     sum = sum +i;
         //     System.out.println("Current value is " +i);
         //     System.out.println("Current sum is " +sum);
         // }
-// 
-        // for(int i=1 ; i<=5 ; i++){//lines
-        //     for(int j=1 ; j<=5 ; j++){//the #
-        //         System.out.print(i);
-        //     }
-        //     System.out.println();
-        // }
+// // 
+//         for(int i=1 ; i<=5 ; i++){//lines
+//             for(int j=1 ; j<=5; j++){//the #
+//                 System.out.print(j);
+//             }
+//             System.out.println();
+//         }
 
         // for(int i=5 ; i>=1 ; i--){//lines
         //     for(int j=1 ; j<=i ; j++){//the #
@@ -86,35 +86,50 @@ public class assignment {
         //     System.out.println("Invalid");
         // }
 
-        Scanner inn = new Scanner(System.in);
-        System.out.print("Enter amount spent: ");
-        double amount = inn.nextDouble();
+        // Scanner inn = new Scanner(System.in);
+        // System.out.print("Enter amount spent: ");
+        // double amount = inn.nextDouble();
 
-        if(amount < 10000){
-            System.out.println("No discount");
-        }
-        else if(amount < 20000){
-            System.out.println("10% discount");
-            amount = 0.9 *amount;
-        }
-        else if(amount < 30000){
-            System.out.println("15% discount");
-            amount =  0.85 *amount;
-        }
-        else if(amount < 40000){
-            System.out.println("20% discount");
-            amount =   0.8 *amount;
-        }
-        else if(amount > 40000){
-            System.out.println("25% discount");
-            amount =  0.75 *amount;
-        }
-        else{
-            System.out.println("Invalid");
-        }
+        // if(amount < 10000){
+        //     System.out.println("No discount");
+        // }
+        // else if(amount < 20000){
+        //     System.out.println("10% discount");
+        //     amount = 0.9 *amount;
+        // }
+        // else if(amount < 30000){
+        //     System.out.println("15% discount");
+        //     amount =  0.85 *amount;
+        // }
+        // else if(amount < 40000){
+        //     System.out.println("20% discount");
+        //     amount =   0.8 *amount;
+        // }
+        // else if(amount > 40000){
+        //     System.out.println("25% discount");
+        //     amount =  0.75 *amount;
+        // }
+        // else{
+        //     System.out.println("Invalid");
+        // }
 
-        System.out.println("Final amount after discount: " + amount);
-
-        
+        // System.out.println("Final amount after discount: " + amount);
+    //    int sum = 0;
+    //     for (int i = 2; i <= 20; i += 2) {
+    //         sum += i;
+    //         System.out.println(i);
+    //     }
+    //     System.out.println("Sum of odd numbers from 1 to 20 (for loop): " + sum);
+     int currentYear = 2024;
+        int joanAge = 8;
+        int yearOfTenthBirthday = currentYear; // initialize
+        for (int year = currentYear; joanAge < 10; year++) {
+            joanAge++;
+            yearOfTenthBirthday = year + 1;
+        }
+        System.out.println("Joan's 10th birthday will be in the year: " + yearOfTenthBirthday);
     }
-}
+    }
+        
+   / 
+

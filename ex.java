@@ -1,14 +1,30 @@
 // Program to demonstrate exception handling mechanism
 // Java program to demonstrate ArithmeticException
-
-class Demo {
-    public static void main(String args[]) {
-        try {
-            int a = 30, b = 0;
-            int c = a / b;  // cannot divide by zero
-            System.out.println("Result = " + c);
-        } catch (ArithmeticException e) {
-            System.out.println("Can't divide a number by 0");
-        }
-    }
+class MyException extends Exception
+{
+ int a;
+ MyException(int b)
+{
+ a=b;
+ }
+ public String toString()
+{
+ return ("Exception Number = "+a) ;
+ }
 }
+class JavaException
+{
+ public static void main(String args[])
+{
+ try
+{
+ throw new MyException(2);
+ // throw is used to create a new exception and throw it.
+ }
+catch(MyException e)
+{
+ System.out.println(e) ;
+}
+}
+}
+
